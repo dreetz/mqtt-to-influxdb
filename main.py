@@ -20,7 +20,7 @@ influx_client = InfluxDBClient3(
 write_api = influx_client.write
 
 
-with open("ressources/config.json") as config_file:
+with open("config.json") as config_file:
     print("Read config file...")
     config = json.load(config_file)
     topics = config["topics"]
